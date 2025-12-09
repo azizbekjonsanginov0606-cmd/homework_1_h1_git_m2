@@ -1,0 +1,114 @@
+$c:#094B72;
+@mixin btn{
+    background-color:#094B72;
+    padding: 25px;
+    border-radius:8px;
+    border:none;
+    color: #fff;
+}
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        font-size: 12px;
+    }
+}
+.section1{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    aside{
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        justify-content: space-between;
+        gap: 50px;
+        .div{
+            display: flex;
+            align-items:center;
+            gap: 10px;
+            width: 400px;
+            border-radius: 26.5px;
+            background-color:#E7F6FF;
+            padding: 10px;
+            p{
+                font-size: 14px;
+            }
+            button{
+                padding: 5px 20px;
+                color: #fff;
+                border-radius: 26.5px;
+                background-color: $c;
+            }
+        }
+        h1{
+            width: 700px;
+            font-family: Playfair Display;
+            font-weight: 700;
+            font-size: 90px;
+            line-height: 120%;
+            color: $c;
+        }
+        p{
+            width: 550px;
+            font-family:sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 158%;
+        }
+        button{
+            @include btn;
+            font-size: 14px;
+        }
+        .div2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            gap: 20px;
+            padding: 20px 0;
+            p{
+                color:grey;
+            }
+            img{
+                width:auto;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    img{
+        width: 53% ;
+        margin-left: -500px;
+    }
+    .div3{
+        background-color:#fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        width: 300px;
+        height: 114px;
+        top: 800.51px;
+        left: 800.1px;
+        opacity: 1;
+        border:none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 58px 16px #0000000F;
+    }
+}
+
