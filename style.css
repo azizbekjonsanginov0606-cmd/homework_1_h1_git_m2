@@ -17,21 +17,21 @@ nav ul {
   font-size: 12px;
 }
 
-.section1, .section2 {
+.section1, footer .footer, .so .section6, .section5, .section2 {
   max-width: 1200px;
-  margin: auto;
+  margin: 100px auto 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.section1 aside, .section2 aside {
+.section1 aside, footer .footer aside, .so .section6 aside, .section5 aside, .section2 aside {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
   gap: 50px;
 }
-.section1 aside .div, .section2 aside .div {
+.section1 aside .div, footer .footer aside .div, .so .section6 aside .div, .section5 aside .div, .section2 aside .div {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -40,16 +40,16 @@ nav ul {
   background-color: #E7F6FF;
   padding: 10px;
 }
-.section1 aside .div p, .section2 aside .div p {
+.section1 aside .div p, footer .footer aside .div p, .so .section6 aside .div p, .section5 aside .div p, .section2 aside .div p {
   font-size: 14px;
 }
-.section1 aside .div button, .section2 aside .div button {
+.section1 aside .div button, footer .footer aside .div button, .so .section6 aside .div button, .section5 aside .div button, .section2 aside .div button {
   padding: 5px 20px;
   color: #fff;
   border-radius: 26.5px;
   background-color: #094B72;
 }
-.section1 aside h1, .section2 aside h1 {
+.section1 aside h1, footer .footer aside h1, .so .section6 aside h1, .section5 aside h1, .section2 aside h1 {
   width: 700px;
   font-family: Playfair Display;
   font-weight: 700;
@@ -57,14 +57,14 @@ nav ul {
   line-height: 120%;
   color: #094B72;
 }
-.section1 aside p, .section2 aside p {
+.section1 aside p, footer .footer aside p, .so .section6 aside p, .section5 aside p, .section2 aside p {
   width: 550px;
   font-family: sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 158%;
 }
-.section1 aside button, .section2 aside button {
+.section1 aside button, footer .footer aside button, .so .section6 aside button, .section5 aside button, .section2 aside button {
   background-color: #094B72;
   padding: 25px;
   border-radius: 8px;
@@ -72,7 +72,7 @@ nav ul {
   color: #fff;
   font-size: 14px;
 }
-.section1 aside .div2, .section2 aside .div2 {
+.section1 aside .div2, footer .footer aside .div2, .so .section6 aside .div2, .section5 aside .div2, .section2 aside .div2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -80,19 +80,19 @@ nav ul {
   gap: 20px;
   padding: 20px 0;
 }
-.section1 aside .div2 p, .section2 aside .div2 p {
+.section1 aside .div2 p, footer .footer aside .div2 p, .so .section6 aside .div2 p, .section5 aside .div2 p, .section2 aside .div2 p {
   color: grey;
 }
-.section1 aside .div2 img, .section2 aside .div2 img {
+.section1 aside .div2 img, footer .footer aside .div2 img, .so .section6 aside .div2 img, .section5 aside .div2 img, .section2 aside .div2 img {
   width: auto;
   margin: 0;
   padding: 0;
 }
-.section1 .img, .section2 .img {
+.section1 .img, footer .footer .img, .so .section6 .img, .section5 .img, .section2 .img {
   width: 53%;
   margin-left: -500px;
 }
-.section1 .div3, .section2 .div3 {
+.section1 .div3, footer .footer .div3, .so .section6 .div3, .section5 .div3, .section2 .div3 {
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -102,8 +102,8 @@ nav ul {
   position: absolute;
   width: 300px;
   height: 114px;
-  top: 800.51px;
-  left: 800.1px;
+  margin-top: 730.51px;
+  margin-left: 730.1px;
   opacity: 1;
   border: none;
   border-radius: 10px;
@@ -112,6 +112,7 @@ nav ul {
 
 .section2 {
   padding: 0 150px;
+  margin: 0 auto;
   gap: 50px;
 }
 .section2 aside h1 {
@@ -181,7 +182,7 @@ nav ul {
   padding: 50px;
 }
 .bg .section3 {
-  max-width: 900px;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -208,7 +209,84 @@ nav ul {
   font-size: 24px;
   line-height: 158%;
   width: auto;
+  font-size: 18px;
+  color: rgb(182, 182, 182);
 }
 .bg .section3 .ds {
+  width: 900px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bg .section3 .ds .d {
+  width: 33%;
+}
+.bg .section3 .ds .d h1 {
+  width: auto;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+.bg .section3 .ds .d p {
+  width: auto;
+}
+.bg .section3 .ds .de {
+  border-left: 2px solid #215D80;
+  border-right: 2px solid #215D80;
+}
+
+.section5 {
+  padding: 80px;
+  margin: 0 auto;
+}
+.section5 aside {
+  padding: 0 79px;
+}
+.section5 aside h1 {
+  width: auto;
+  font-size: 48px;
+}
+.section5 aside p {
+  width: auto;
+  font-size: 24px;
+}
+.section5 aside button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 30px;
+  font-size: 22px;
+}
+
+.so {
+  background-color: #094B72;
+  padding: 100px 0;
+}
+.so .section6 {
+  align-items: start;
+}
+.so .section6 .ends {
+  display: flex;
+  gap: 120px;
+  color: #fff;
+}
+.so .section6 .ends h1 {
+  font-size: 20px;
+}
+.so .section6 .ends .end {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.so .section6 .ends .end p {
+  line-height: 200%;
+  color: rgb(182, 182, 182);
+}
+
+footer {
+  background-color: #004D7B;
+  padding: 30px 0;
+}
+footer .footer {
+  margin: 0 auto;
+  color: rgb(182, 182, 182);
 }/*# sourceMappingURL=style.css.map */

@@ -40,7 +40,7 @@ nav{
 }
 .section1{
     max-width: 1200px;
-    margin: auto;
+    margin: 100px auto 0 auto;
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -109,8 +109,8 @@ nav{
         position: absolute;
         width: 300px;
         height: 114px;
-        top: 800.51px;
-        left: 800.1px;
+        margin-top: 730.51px;
+        margin-left: 730.1px;
         opacity: 1;
         border:none;
         border-radius: 10px;
@@ -120,6 +120,7 @@ nav{
 .section2{
     @extend .section1;
     padding: 0 150px;
+    margin: 0 auto;
     gap:50px;
     aside{
         @extend aside;
@@ -172,7 +173,7 @@ background-repeat: no-repeat;
 background-size: cover;
 padding: 50px;
 .section3{
-    max-width: 900px;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -189,9 +190,87 @@ padding: 50px;
     p{
         @include p;
         width: auto;
+        font-size: 18px;
+        color: rgb(182, 182, 182);
     }
     .ds{
+        width: 900px;
         display: flex;
+        align-items:center;
+        justify-content: space-between;
+        .d{
+            width: 33%;
+            h1{
+                width: auto;
+                font-family: sans-serif;
+                font-weight: 900;
+            }
+            p{
+                width: auto;
+                
+            }
+        }
+        .de{
+            border-left: 2px solid #215D80;
+            border-right: 2px solid #215D80;
+        }
     }
 }
+}
+.section5{
+    @extend .section1;
+    padding: 80px;
+    margin: 0 auto;
+    aside{
+        padding:0 79px;
+        h1{
+            width: auto;
+            font-size: 48px;
+        }
+        p{
+            width: auto;
+            font-size: 24px;
+        }
+        button{
+            display: flex;
+            align-items:center;
+            gap: 20px;
+            padding: 10px 30px;
+            font-size: 22px;
+        }
+    }
+}
+.so{
+    background-color: $c;
+    padding: 100px 0;
+    .section6{
+        @extend .section1;
+        align-items: start;
+        .ends{
+            display: flex;
+            gap: 120px;
+            color: #fff;
+            h1{
+                font-size: 20px;
+            }
+            .end{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                p{
+                    line-height: 200%;
+                    color: rgb(182, 182, 182);
+                }
+            }
+        }
+    }
+}
+footer{
+    background-color:#004D7B;
+    padding:30px 0 ;
+    .footer{
+    margin: 0 auto;
+        @extend .section1;
+        color: rgb(182, 182, 182);
+    }
 }
