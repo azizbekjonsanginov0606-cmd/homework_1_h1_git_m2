@@ -6,6 +6,21 @@ $c:#094B72;
     border:none;
     color: #fff;
 }
+@mixin h1{
+            width: 700px;
+            font-family: Playfair Display;
+            font-weight: 700;
+            font-size: 90px;
+            line-height: 120%;
+            color: $c;
+        }
+@mixin p{
+            width: 550px;
+            font-family:sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 158%;
+        }
 *{
     margin: 0;
     font-family: sans-serif;
@@ -54,19 +69,10 @@ nav{
             }
         }
         h1{
-            width: 700px;
-            font-family: Playfair Display;
-            font-weight: 700;
-            font-size: 90px;
-            line-height: 120%;
-            color: $c;
+            @include h1;
         }
         p{
-            width: 550px;
-            font-family:sans-serif;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 158%;
+           @include p;
         }
         button{
             @include btn;
@@ -89,7 +95,7 @@ nav{
             }
         }
     }
-    img{
+    .img{
         width: 53% ;
         margin-left: -500px;
     }
@@ -111,4 +117,81 @@ nav{
         box-shadow: 0px 0px 58px 16px #0000000F;
     }
 }
-
+.section2{
+    @extend .section1;
+    padding: 0 150px;
+    gap:50px;
+    aside{
+        @extend aside;
+        h1{
+            @include h1;
+            font-size: 48px;
+            width: 400px;
+        }
+        p{
+          @include p;
+            font-size: 22px;
+            width: 360px; 
+            font-weight: 400;
+            line-height: 36px;
+        }
+    }
+    .grids{
+        width: 500px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 20px;
+        .grid{
+            background-color: #fff;
+            padding: 25px;
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items:start;
+            justify-content: space-between;
+            border-radius:8px;
+            box-shadow: 0px 18px 58px 16px #0000000F;
+            h1{
+                @include h1;
+                width: auto;
+                font-size: 25px;
+            }
+            p{
+            @include p;
+            width: auto;
+            font-size: 14px;
+            }
+        }
+    }
+}
+.bg{
+background-image: url(./img/BG.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 50px;
+.section3{
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    gap: 20px;
+    h1{
+        @include h1;
+        color: #fff;
+        font-size: 48px;
+    }
+    p{
+        @include p;
+        width: auto;
+    }
+    .ds{
+        display: flex;
+    }
+}
+}
